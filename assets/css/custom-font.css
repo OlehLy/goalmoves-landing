@@ -1,0 +1,17 @@
+@font-face {
+   font-family: 'sohne';
+   src: url('../fonts/sohne-font-family/TestSohne-Buch-BF663d89cd32e6a.otf') format('otf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'sohne-halfbold';
+   src: url('../fonts/sohne-font-family/TestSohne-Halbfett-BF663d89cd2d67b.otf') format('otf');
+   font-weight: 600;
+   font-style: normal;
+}
+
+body {
+   font-family: 'sohne', sans-serif;
+}

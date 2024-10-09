@@ -1,0 +1,372 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*----------------------------------------------------------------*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+body {
+  font-family: sohne;
+}
+
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+ }
+
+header {
+   position: relative;
+   z-index: 4;
+  padding: 10px 0;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left-side{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header__logo svg{
+   max-width: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.header__actions .header__sign-in {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__actions .header__contact-sales {
+  background-color: white;
+  color: #ff4e50;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header__actions .header__contact-sales:hover {
+  background-color: #f9d423;
+  color: #fff;
+}
+
+/* -------------------------------------------------*/
+
+.hero {
+   position: relative;
+   height: 100vh;
+   /* overflow: hidden; */
+   padding: 60px 0;
+ }
+ 
+ .hero::before {
+   content: '';
+   position: absolute;
+   z-index: 3;
+   top: -100px;
+   left: 0;
+   width: 100%;
+   height: 650px;
+   /* background: linear-gradient(45deg, #ff4e50, #f9d423, #67b26f, #ec6f66); */
+   background-color: #C70D1D;
+   background-size: 400% 400%;
+   animation: gradientMove 15s ease infinite;
+   clip-path: polygon(0 0, 100% 0, 100% 55%, 0 90%);
+ }
+ 
+ @keyframes gradientMove {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ 
+ .hero-content {
+   position: relative;
+   z-index: 4;
+   color: #fff;
+   max-width: 50%;
+   margin-top: 30px;
+ }
+ 
+ .hero-content h1 {
+   font-size: 80px;
+   margin-bottom: 50px;
+   font-weight: 600;
+   letter-spacing: -0.04em;
+   line-height: 1.04;
+ }
+ 
+ .hero-content p {
+   color: #425466;
+   font-size: 18px;
+   margin: 20px 0;
+   letter-spacing: .2px;
+   line-height: 25px;
+ }
+ 
+ .payment-interface {
+   position: relative;
+   z-index: 2;
+   max-width: 400px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   margin-right: 20px;
+ }
+ 
+ .payment-interface .card h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+ }
+ 
+ .payment-interface .card p {
+   font-size: 1rem;
+   margin-bottom: 20px;
+ }
+ 
+ .payment-interface .card button.apple-pay {
+   display: block;
+   background-color: black;
+   color: white;
+   padding: 10px 0;
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   font-size: 1.1rem;
+ }
+ 
+ .payment-interface form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .payment-interface form input {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+ }
+ 
+ .payment-interface form button {
+   padding: 10px;
+   background-color: #ff4e50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+ }
+
+
+
+
+
+
+/* -------------------------------------------------*/
+
+footer {
+  padding: 40px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-logo p a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 4;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* -------------------------------------------------*/
+
